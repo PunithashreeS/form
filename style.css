@@ -1,0 +1,179 @@
+*{
+    font-family: 'Trebuchet MS';
+
+}
+#body{
+  background-image: 'file:///C:/Users/acer/Pictures/application.jpg';
+}
+
+#mainheading{
+    color: maroon;
+    margin: 2rem;
+    text-shadow:red;
+
+}
+
+#container{
+    margin: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: max-content;
+    border-radius: 1rem;
+ 
+  background: rgb(100,6,6) ;
+  
+  
+    box-shadow: 3px 3px 15px red ;
+
+}
+
+
+#form{
+    margin: 1rem;
+    border-radius: 3rem;
+    width: 30rem;
+    text-align: justify ;
+  background: maroon;
+    box-shadow: 2px 2px 2px red ;
+    
+    
+
+
+    
+}
+#resultpage{
+
+    margin:2rem;
+    border-radius: 2rem;
+    width: 30rem;
+    box-shadow: 2px 2px 2px red;
+
+}
+
+
+textarea{
+border-radius: 10px;
+width: 90%;
+}
+#nameinput,#year,#favlang,#location,#desc,#submitbutton,#namehead{
+    margin: 1.2rem;
+}
+
+
+#nameinput input{
+
+    width: 12rem;
+    height: 1.8rem;
+    background-color:grey;
+    border-radius: 6px;
+  
+}
+
+#nameinput input:focus{
+    background-color:rgb(204,183,201);
+
+}
+
+#nameinput input:hover{
+    background-color: white;
+    border: 2px black;
+ 
+}
+
+
+
+#desc textarea{
+    background-color:grey;
+    border: 1px solid black;
+    border-radius: 15px;
+ 
+}
+
+#desc textarea:hover{
+    background-color: white;
+    border: 2px black;
+ 
+}
+
+
+
+
+#desc textarea:focus{
+    background-color:rgb(204,183,201) ;
+
+}
+
+#favlang input,#year input{
+    cursor: pointer;
+}
+
+
+#location select{
+    cursor: pointer;
+    width: 10rem;
+    height: 1.5rem;
+    border-radius: 5px;
+    background-color: grey;
+    border: 1px solid black;
+
+}
+
+#location select:focus{
+    background-color:rgb(204,183,201);
+
+}
+
+#location select:hover{
+    background-color: white;
+  position: rotate ;
+}
+
+#submitbutton{
+    margin-left: 30%;
+    width: 10rem;
+    height: 2rem;
+    background-color: grey;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+#submitbutton:hover{
+        transition-duration: 1.05s;
+  cursor: pointer;
+  height: 2rem;
+  width: 10rem;
+  border-radius: 25%;
+  background-color: white;
+  border: 2px solid black;
+  transform: rotate(360deg);
+
+
+}
+
+
+
+
+#resultpage p{
+    margin: 3rem;
+}
+
+#headingfordetais{
+    color: red;
+    margin: 2rem;
+    text-shadow: 1px 1px 4px red;
+    text-decoration: underline;
+}
+
+
+#moreaboutyou{
+    text-align: justify;
+}
+
+#moreaboutyou:hover{
+    text-align: justify;
+  position:fixed;
+
+ 
+
+}
+

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link href="style.css">
+</head>
+<body>
+
+    <h1 id="mainheading">Job Application Form:</h1>
+
+    <div id="container">
+
+        <div id="form">
+            <h3 id="namehead">Enter Your Name:</h3>
+            <div id="nameinput">
+            <input type="text" name="firstname" id="fname" placeholder="First Name">
+            <br>
+            <br>
+            <input type="text" name="lastname" id="lname" placeholder="Last Name">
+            <br>
+            <br>
+            <h3>Mail Address:</h3>
+            <input type="email" name="email" id="email" placeholder="name@gmail.com">
+            <br>
+            <br>
+            <h3>Mobile Number:</h3>
+            <input type="text" name="Mobile" id="Mobile" placeholder="+91 1234567890">
+            <br>
+            <br>
+            <h3>Date Of Birth</h3>
+            <input type="date" name="date" id="date" placeholder="DD/MM/YYYY">
+
+           </div>
+            <br>
+
+            <div id="year">
+                <h3>Year Of PassOut</h3>
+
+            <input type="radio" name="Passoutyear" id="year2019" value="2019">
+            <label for="2019">2019</label><br>
+            <input type="radio" name="Passoutyear" id="year2020" value="2020">
+            <label for="2020">2020</label><br>
+            <input type="radio" name="Passoutyear" id="year2021" value="2021">
+            <label for="2021">2021</label><br>
+            <input type="radio" name="Passoutyear" id="year2022" value="2022" >
+            <label for="2022">2022</label><br>
+            <input type="radio" name="Passoutyear" id="year2023" value="2023">
+            <label for="2023">2023</label>
+            </div>
+
+            <br>
+
+            <div id="favlang">
+                <h3>Known Language</h3>
+            <input type="Checkbox" id="cpp" value="C++">
+            <label for="C++">C++</label>
+            <br>
+            <input type="Checkbox" value="Java"  id="java">
+            <label for="Java">Java</label>
+            <br>
+            <input type="Checkbox" value="Python" id="python">
+            <label for="Python">Python</label>
+            <br>
+            <input type="Checkbox" value="Javascript"  id="javascript">
+            <label for="Javascript">Javascript</label>
+            <br>
+            <input type="Checkbox" value="c#" id="csh">
+            <label for="c#">C#</label>
+            <br>
+
+            
+            </div>
+            <br>
+
+            <div id="location">
+                <h3>Preferred Work Location</h3>
+            <label>Choose Location</label>
+            <br>
+            <select name="worklocation" id="locationdropdown">
+                <optgroup label="Karnataka">
+                    <option value="Bangalore" selected="selected">Bengaluru</option>
+                    <option value="Mangalore">Mangaluru</option>
+                </optgroup>
+              <optgroup label="Kerala">
+                    <option value="Alappuzha" selected="selected">Alappuzha</option>
+                    <option value="Kozhikode">Kozhikode</option>
+                </optgroup>
+              <optgroup label="TamilNadu">
+                    <option value="Chennai" selected="selected">Chennai</option>
+                    <option value="Coimbatore">Coimbatore</option>
+                </optgroup>
+                <optgroup label="Maharashtra">
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Pune">Pune</option>
+                </optgroup>
+            </select>
+            </div>
+
+            <br>
+
+            <div id="desc">
+                <h3>More About You</h3>
+                <textarea name="description" placeholder="Write..." id="description"></textarea>            </div>
+        <button id="submitbutton" onclick="submitform()">Submit</button>
+
+    
+        </div>
+        
+        <div id="resultpage">
+
+            <div id="results">
+                <h3 style="display: none;" id="headingfordetais"> Details : </h3>
+                <p id="fullname"></p>
+                <p id="mobilenumber"></p>
+                <p id="mailid"></p>
+                <p id="dateofbirth"></p>
+                <p id="yearofpassout"></p>
+                <p id="skills"></p>
+                <p id="preferredlocation"></p>
+                <p id="moreaboutyou"></p>
+                
+            </div>
+
+        </div>
+
+    </div>
+
+
+        <script src="script.js"></script>
+</body>
+</html>    
